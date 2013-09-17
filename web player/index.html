@@ -18,25 +18,13 @@
     <script src="./codecs/js/auroraplayer.js"></script>
     <script src="./codecs/js/aurora.js"></script>
     <script src="./codecs/js/mp3.js"></script>
+    <script src="./codecs/js/aac.js"></script>
 
     <script>
       (function () {
-        var fileInput, fooPlayer;
+        var fileInput;
 
         fileInput = document.getElementById('selectMp3File');
-        fooPlayer = {
-          state: "",
-          volume: 100,
-          seekTime: 0,
-          bufferProgress: 0,
-          duration: 0,
-
-          on: function(event, fn) {
-          },
-          off: function(event, fn) {
-          }
-        };
-
         fileInput.onchange = function (e) {
           var audioFile, avPlayer;
 
