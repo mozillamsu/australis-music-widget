@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8"> 
-    <title>MP3 &mdash; Audiocogs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- <link rel="stylesheet" type="text/css" href="./css/all.min.css"> -->
-    <link rel="shortcut icon" href="/favicon.ico">
     <!--[if lt IE 9]>
-    <script src="/scripts/html5shiv.js"></script>
+      <script src="/scripts/html5shiv.js"></script>
     <![endif]-->
 
-    <link rel="alternate" type="application/rss+xml" title="Audiocogs Blog" href="/rss.xml">
-</head>
-<body class="codec">
-<div>
-    <h3>Select an MP3 file, and it should automatically begin to play.</h3>
-    <input type="file" id="selectMp3File" />
+    <title>MP3 &mdash; Audiocogs</title>
+  </head>
+  <body class="codec">
+    <div>
+      <h3>Select an MP3 file, and it should automatically begin to play.</h3>
+      <input type="file" id="selectMp3File" />
+    </div>
 
-    <p>
-        You can find the Audiocogs wiki <a href="https://github.com/audiocogs/aurora.js/wiki">here</a>
-    </p>
-</div>
-<script src="./codecs/js/auroraplayer.js"></script>
-<script src="./dgplayer/alert.js"></script>
-<script src="./codecs/js/aurora.js"></script>
-<script src="./codecs/js/mp3.js"></script>
-<script>
-var fileInput = document.getElementById('selectMp3File');
-var filePlayer = "";
-var audioFile = "";
-var avPlayer = "";
+    <script src="./codecs/js/auroraplayer.js"></script>
+    <script src="./codecs/js/aurora.js"></script>
+    <script src="./codecs/js/mp3.js"></script>
 
-var fooPlayer = {
-    state: "",
-    volume: 100,
-    seekTime: 0,
-    bufferProgress: 0,
-    duration: 0,
+    <script>
+      (function () {
+        var fileInput, fooPlayer;
 
-    on: function(event, fn) {
+        fileInput = document.getElementById('selectMp3File');
+        fooPlayer = {
+          state: "",
+          volume: 100,
+          seekTime: 0,
+          bufferProgress: 0,
+          duration: 0,
 
-    },
-    off: function(event, fn) {
+          on: function(event, fn) {
+          },
+          off: function(event, fn) {
+          }
+        };
 
-    }
-};
+        fileInput.onchange = function (e) {
+          var audioFile, avPlayer;
 
-fileInput.onchange = function(e) {
-    audioFile = fileInput.files[0];
-    avPlayer = AV.Player.fromFile(audioFile)
-    avPlayer.play();
-    //filePlayer = new DGAuroraPlayer(avPlayer, fooPlayer);
-}
-</script>
-</body>
+          audioFile = fileInput.files[0];
+          avPlayer = AV.Player.fromFile(audioFile)
+          avPlayer.play();
+        }
+      }());
+    </script>
+  </body>
 </html>
-
