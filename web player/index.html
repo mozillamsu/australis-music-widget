@@ -18,18 +18,22 @@
     <script src="./codecs/js/auroraplayer.js"></script>
     <script src="./codecs/js/aurora.js"></script>
     <script src="./codecs/js/mp3.js"></script>
-    <script src="./codecs/js/aac.js"></script>
     <script src="./codecs/js/flac.js"></script>
+    <script src="./codecs/js/alac.js"></script>
+    <script src="./codecs/js/aac.js"></script>
 
     <script>
       (function () {
-        var fileInput;
+        var fileInput, avPlayer;
 
         fileInput = document.getElementById('selectMp3File');
         fileInput.onchange = function (e) {
-          var audioFile, avPlayer;
+          var audioFile;
 
           audioFile = fileInput.files[0];
+          if (typeof(avPlayer) !== 'undefined') {
+            avPlayer.stop();
+          }
           avPlayer = AV.Player.fromFile(audioFile)
           avPlayer.play();
         }
