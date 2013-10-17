@@ -1,8 +1,8 @@
 {
-  "name": "australis-music-widget",
-  "fullName": "australis-music-widget",
-  "id": "jid1-WoaV1oFZZHmxNQ",
-  "description": "A music widget for playing a user's library.",
+  "name": "xul-injector",
+  "fullName": "xul-injector",
+  "id": "jid1-zXLg9TEemfKKhw",
+  "description": "a basic add-on",
   "author": "",
   "license": "MPL 2.0",
   "version": "0.1"
