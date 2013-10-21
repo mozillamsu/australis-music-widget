@@ -1,0 +1,17 @@
+<vbox>
+    <vbox id="msu-music-player-controls">
+        <button id="msu-music-btn-settings" label="Set Library Location" />
+        <button id="msu-music-btn-previous" label="Previous" />
+        <button id="msu-music-btn-toggle-playback" label="Play" />
+        <button id="msu-music-btn-next" label="Next" />
+        <button id="msu-music-btn-playlist" label="Playlist" />
+    </vbox>
+    <hbox>
+        <label id="msu-music-lbl-current-time" value="0:00" />
+        <progressmeter id="msu-music-progress-playback" value="0" />
+        <label id="msu-music-lbl-time-remaining" value="-0:00" />
+    </hbox>
+    <vbox id="msu-music-library">
+        <label id="msu-music-merp" value="merp" />
+    </vbox>
+</vbox>
