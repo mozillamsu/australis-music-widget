@@ -2,9 +2,9 @@
     <hbox>
         <image id="msu-music-img-album-artwork" width="64" height="64" />
         <vbox height="64">
-            <label value="Churn of the Century" style="font-weight: bold;" />
-            <label value="Cozza Frenzy" />
-            <label value="Bassnectar" />
+            <label id="msu-music-lbl-title" value="Churn of the Century" style="font-weight: bold;" />
+            <label id="msu-music-lbl-album" value="Cozza Frenzy" />
+            <label id="msu-music-lbl-artist" value="Bassnectar" />
         </vbox>
     </hbox>
 
@@ -15,10 +15,10 @@
     </hbox>
 
     <hbox id="msu-music-playback-controls" align="center">
-        <image src="http://openclipart.org/people/warszawianka/media-skip-backward.svg" />
+        <image id="msu-music-btn-previous" src="http://openclipart.org/people/warszawianka/media-skip-backward.svg" />
         <!--<image src="http://openclipart.org/people/warszawianka/media-playback-pause.svg" />-->
         <toolbarbutton id="msu-music-btn-play-pause">Play</toolbarbutton>
-        <image src="http://openclipart.org/people/warszawianka/media-skip-forward.svg" />
+        <image id="msu-music-btn-next" src="http://openclipart.org/people/warszawianka/media-skip-forward.svg" />
     </hbox>
 
     

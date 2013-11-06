@@ -3673,4 +3673,3 @@ MozillaAudioDevice = (function(_super) {
 })(AV.EventEmitter);
   return global.AV = AV;
 })();
-
