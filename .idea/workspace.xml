@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d27aeca-419c-4824-9529-985ee3d8e75d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/music-library.js" afterPath="$PROJECT_DIR$/lib/music-library.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/music-vm.js" afterPath="$PROJECT_DIR$/lib/music-vm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/tag-getter.js" afterPath="$PROJECT_DIR$/data/tag-getter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="australis-music-widget.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="music-vm.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/music-vm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="0" selection-start="4509" selection-end="4832" vertical-scroll-proportion="0.5636792" vertical-offset="1608" max-vertical-offset="4065">
+            <state line="189" column="38" selection-start="5564" selection-end="5564" vertical-scroll-proportion="0.754717" vertical-offset="1875" max-vertical-offset="4110">
               <folding />
             </state>
           </provider>
@@ -430,7 +427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/music-vm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="0" selection-start="4509" selection-end="4832" vertical-scroll-proportion="0.5636792" vertical-offset="1608" max-vertical-offset="4065">
+        <state line="189" column="38" selection-start="5564" selection-end="5564" vertical-scroll-proportion="0.754717" vertical-offset="1875" max-vertical-offset="4110">
           <folding />
         </state>
       </provider>
