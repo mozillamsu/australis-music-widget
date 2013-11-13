@@ -14,6 +14,7 @@ self.port.on('loadTags', function(fileInfo) {
     let tagData = {};
 
     asset.on('metadata', function(meta) {
+        console.log('asset.on metadata called');
         tagData.Title = meta.title;
         tagData.Album = meta.album;
         tagData.Artist = meta.artist;
@@ -25,6 +26,7 @@ self.port.on('loadTags', function(fileInfo) {
     });
 
     asset.get('duration', function(msec) {
+        console.log('asset.get duration called');
         tagData.Duration = msec;
         asset.stop();
 
