@@ -2,9 +2,9 @@
     <hbox>
         <image id="msu-music-img-album-artwork" width="64" height="64" />
         <vbox height="64">
-            <label id="msu-music-lbl-title" value="Track Title" style="font-weight: bold;" />
-            <label id="msu-music-lbl-album" value="Album" />
-            <label id="msu-music-lbl-artist" value="Artist" />
+            <label id="msu-music-lbl-title" value="Track Title" crop="right" width="100"  style="font-weight: bold;" />
+            <label id="msu-music-lbl-album" crop="right" width="100" value="Album" />
+            <label id="msu-music-lbl-artist" crop="right" width="100" value="Artist" />
         </vbox>
     </hbox>
 
@@ -15,10 +15,12 @@
     </hbox>
 
     <hbox id="msu-music-playback-controls" align="center">
-        <image id="msu-music-btn-previous" src="http://openclipart.org/people/warszawianka/media-skip-backward.svg" />
+        <!-- <image id="msu-music-btn-previous" src="http://openclipart.org/people/warszawianka/media-skip-backward.svg" /> -->
+        <toolbarbutton id="msu-music-btn-previous">&lt;--</toolbarbutton>
         <!--<image src="http://openclipart.org/people/warszawianka/media-playback-pause.svg" />-->
         <toolbarbutton id="msu-music-btn-play-pause">Play</toolbarbutton>
-        <image id="msu-music-btn-next" src="http://openclipart.org/people/warszawianka/media-skip-forward.svg" />
+        <!-- <image id="msu-music-btn-next" src="http://openclipart.org/people/warszawianka/media-skip-forward.svg" /> -->
+        <toolbarbutton id="msu-music-btn-next">--&gt;</toolbarbutton>
     </hbox>
 
     
@@ -34,7 +36,7 @@
     </vbox>
 
     <hbox>
-        <textbox width="175" height="26" />
+        <textbox width="175" height="26" placeholder="Filter Songs" />
     </hbox>
     <toolbarbutton id="msu-music-btn-set-library">Set Library</toolbarbutton>
 </vbox>
