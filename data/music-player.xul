@@ -2,16 +2,16 @@
     <hbox>
         <image id="msu-music-img-album-artwork" width="64" height="64" />
         <vbox height="64">
-            <label id="msu-music-lbl-title" value="Churn of the Century" style="font-weight: bold;" />
-            <label id="msu-music-lbl-album" value="Cozza Frenzy" />
-            <label id="msu-music-lbl-artist" value="Bassnectar" />
+            <label id="msu-music-lbl-title" value="Track Title" style="font-weight: bold;" />
+            <label id="msu-music-lbl-album" value="Album" />
+            <label id="msu-music-lbl-artist" value="Artist" />
         </vbox>
     </hbox>
 
     <hbox id="msu-music-hbox-playback-progress">
-        <label id="msu-music-playback-elapsed" value="0:38" style="margin-top: 5px;" />
-        <scale id="msu-music-playback-progress" min="0" max="244" value="38" />
-        <label id="msu-music-playback-remaining" value="-3:26" style="margin-top: 5px;" />
+        <label id="msu-music-playback-elapsed" value="0:00" style="margin-top: 5px;" />
+        <scale id="msu-music-playback-progress" min="0" max="100" value="0" />
+        <label id="msu-music-playback-remaining" value="-0:00" style="margin-top: 5px;" />
     </hbox>
 
     <hbox id="msu-music-playback-controls" align="center">
